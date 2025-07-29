@@ -1,0 +1,172 @@
+body{
+    padding: 0px;
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-back{
+    background-color: lightpink;
+}
+.nav-link:hover{
+    color:blueviolet !important;
+    text-decoration: underline;
+    transition: 0.3s ease;
+}
+.container{
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background:linear-gradient(to right,#89cff1,#f39fc6);
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-about{
+    max-width: 100%;
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.769);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+.skill-section{
+    background:linear-gradient(to right,#919cfa,#9ec1ef);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.skill-box{
+    background-color: whitesmoke;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0 0.1);
+    transition: transform 0.3s;
+    max-width:120px;
+}
+.skill-box:hover{
+    transform: scale(1.1);
+    background-color: #c9dbf2;
+}
+html{
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+button{
+    border-radius: 30px;
+    padding: 10px;
+    border-width: 0px;
+}
+.border{
+    border-radius: 20px;
+}
+.contact-section {
+  background: linear-gradient(to right, #f7c3e1, #c3eaf7);
+  padding: 50px 20px;
+  text-align: center;
+}
+.container-about h2{
+   font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: darkblue; 
+}
+.container-about p{
+   font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 30px; 
+}
+.skill-section h2{
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: darkblue;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: darkblue;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: darkviolet;
+}
+.name{
+    color: darkblue;
+}
+.border a{
+    text-decoration: none;
+}
+/* Navigation bar background (default and on scroll) */
+.nav-back {
+  background-color: transparent;
+  transition: background-color 0.4s ease;
+}
+
+.nav-back.scrolled {
+  background-color: #343a40; /* Dark background when scrolled */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Nav links style */
+.navbar-nav .nav-link {
+  color: white;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107; /* Change color on hover */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+/* Active link style */
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #ffc107;
+}
